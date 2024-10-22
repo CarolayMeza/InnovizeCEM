@@ -1,0 +1,176 @@
+/* Estilos Generales */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f9fa; /* Fondo claro */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Texto oscuro para legibilidad */
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(45deg, #3b0b5b, #1c0f87); /* Colores de la marca */
+    padding: 20px;
+    text-align: center;
+    color: #fff; /* Texto blanco */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+header nav ul {
+    list-style: none; /* Eliminar viñetas */
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline; /* Elementos en línea */
+    margin: 0 15px; /* Espaciado */
+}
+
+header nav a {
+    color: #fff; /* Enlaces en blanco */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* Sección Hero */
+.hero {
+    background: #3b0b5b; /* Color de fondo de la sección hero */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin: 0 0 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background: #1c0f87; /* Color de botón */
+    color: #fff; /* Texto del botón en blanco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #3b0b5b; /* Cambia el color al pasar el mouse */
+}
+
+/* Sección Sobre Nosotros */
+.about {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about h2 {
+    color: #3b0b5b; /* Color del título */
+}
+
+/* Sección Servicios */
+.services {
+    padding: 40px 20px;
+    background-color: #fff; /* Fondo blanco */
+    margin: 20px auto;
+    max-width: 1200px; /* Ancho máximo */
+}
+
+.services h2 {
+    text-align: center;
+    color: #3b0b5b; /* Color del título */
+}
+
+.service-item {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 8px;
+    background: #f8f9fa; /* Fondo suave */
+    margin: 10px; /* Espaciado */
+    transition: transform 0.3s ease; /* Efecto hover */
+}
+
+.service-item:hover {
+    transform: translateY(-5px); /* Efecto de elevación */
+}
+
+.service-item h3 {
+    color: #3b0b5b; /* Color del título del servicio */
+}
+
+/* Sección Testimonios */
+.testimonials {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.testimonials h2 {
+    color: #3b0b5b; /* Color del título */
+}
+
+/* Sección Contacto */
+.contact {
+    padding: 40px 20px;
+    background: linear-gradient(45deg, #3b0b5b, #1c0f87); /* Color de fondo */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.contact form {
+    margin: 20px 0;
+}
+
+.contact label {
+    display: block; /* Etiquetas en bloque */
+    margin: 10px 0 5px; /* Espaciado */
+}
+
+.contact input,
+.contact textarea {
+    width: calc(100% - 20px); /* Ancho completo menos padding */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde gris */
+    margin-bottom: 20px; /* Espacio entre campos */
+}
+
+.contact button {
+    background: #1c0f87; /* Color del botón */
+    color: #fff; /* Texto en blanco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.contact button:hover {
+    background: #3b0b5b; /* Cambio de color al pasar el mouse */
+}
+
+/* Pie de Página */
+footer {
+    background-color: #1c0f87; /* Color oscuro */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0; /* Eliminar margenes */
+}
