@@ -1,122 +1,181 @@
+/* Estilos Generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f9fa; /* Fondo claro */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    color: #333; /* Texto oscuro para legibilidad */
 }
 
+/* Encabezado */
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-main {
-    padding: 2rem;
-}
-
-.listing {
-    background: #fff;
-    margin: 1rem 0;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.listing h2 {
-    margin-top: 0;
-}
-
-.listing p {
-    margin: 0.5rem 0;
-}
-
-.listing img {
-    max-width: 100%;
-    height: auto;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem 0;
-    background: #333;
-    color: #fff;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
+    background: linear-gradient(45deg, #3b0b5b, #1c0f87); /* Colores de la marca */
     padding: 20px;
-}
-
-h1 {
     text-align: center;
-    color: #fffdfd;
+    color: #fff; /* Texto blanco */
 }
 
-.item {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 600;
 }
 
-.item h2 {
-    margin-top: 0;
-    color: #555;
+header nav ul {
+    list-style: none; /* Eliminar viñetas */
+    padding: 0;
 }
 
-.item p {
+header nav ul li {
+    display: inline; /* Elementos en línea */
+    margin: 0 15px; /* Espaciado */
+}
+
+header nav a {
+    color: #fff; /* Enlaces en blanco */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* Sección Hero */
+.hero {
+    background: #3b0b5b; /* Color de fondo de la sección hero */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
     margin: 0 0 10px;
-    color: #666;
 }
 
-.item .price {
-    font-weight: bold;
-    color: #333;
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
-.item .details {
-    margin-top: 10px;
-    color: #444;
-}
-
-.item .details span {
-    display: block;
-}
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.gallery img {
-    max-width: 100%;
-    height: auto;
+.cta-btn {
+    background: #1c0f87; /* Color de botón */
+    color: #fff; /* Texto del botón en blanco */
+    padding: 10px 20px;
+    border: none;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    text-decoration: none;
+    transition: background 0.3s ease;
 }
 
-.gallery .thumbnail {
-    flex: 1;
-    min-width: 150px;
-    max-width: 300px;
+.cta-btn:hover {
+    background: #3b0b5b; /* Cambia el color al pasar el mouse */
 }
 
-/* Styles for the Contact title */
-h2 {
+/* Sección Sobre Nosotros */
+.about {
     text-align: center;
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 1rem;
+    padding: 40px 20px;
 }
 
-/* Styles for the social links list */
+.about h2 {
+    color: #3b0b5b; /* Color del título */
+}
+
+/* Sección Servicios */
+.services {
+    padding: 40px 20px;
+    background-color: #fff; /* Fondo blanco */
+    margin: 20px auto;
+    max-width: 1200px; /* Ancho máximo */
+}
+
+.services h2 {
+    text-align: center;
+    color: #3b0b5b; /* Color del título */
+}
+
+.service-item {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 8px;
+    background: #f8f9fa; /* Fondo suave */
+    margin: 10px; /* Espaciado */
+    transition: transform 0.3s ease; /* Efecto hover */
+}
+
+.service-item:hover {
+    transform: translateY(-5px); /* Efecto de elevación */
+}
+
+.service-item h3 {
+    color: #3b0b5b; /* Color del título del servicio */
+}
+
+/* Sección Testimonios */
+.testimonials {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.testimonials h2 {
+    color: #3b0b5b; /* Color del título */
+}
+
+/* Sección Contacto */
+.contact {
+    padding: 40px 20px;
+    background: linear-gradient(45deg, #3b0b5b, #1c0f87); /* Color de fondo */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.contact form {
+    margin: 20px 0;
+}
+
+.contact label {
+    display: block; /* Etiquetas en bloque */
+    margin: 10px 0 5px; /* Espaciado */
+}
+
+.contact input,
+.contact textarea {
+    width: calc(100% - 20px); /* Ancho completo menos padding */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde gris */
+    margin-bottom: 20px; /* Espacio entre campos */
+}
+
+.contact button {
+    background: #1c0f87; /* Color del botón */
+    color: #fff; /* Texto en blanco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.contact button:hover {
+    background: #3b0b5b; /* Cambio de color al pasar el mouse */
+}
+
+/* Pie de Página */
+footer {
+    background-color: #1c0f87; /* Color oscuro */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0; /* Eliminar margenes */
+}
+
+/* Estilos para los enlaces sociales */
 .social-links {
     list-style: none;
     padding: 0;
@@ -130,12 +189,11 @@ h2 {
 
 .social-links a {
     text-decoration: none;
-    color: #007bff; /* Link color, can be changed */
+    color: #fff; /* Color de los enlaces */
     font-size: 1.2rem;
     transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #0056b3; /* Link color on hover */
-    text-decoration: underline;
+    color: #ffd700; /* Color de enlace al pasar el mouse */
 }
